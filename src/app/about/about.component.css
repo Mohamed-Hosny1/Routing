@@ -1,0 +1,25 @@
+.aboutSection {
+  height: 80vh;
+}
+.headingLine {
+  width: fit-content;
+  margin: auto;
+}
+.headingLine::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  right: 220%;
+  background-color: white;
+}
+.headingLine::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 220%;
+  background-color: white;
+}

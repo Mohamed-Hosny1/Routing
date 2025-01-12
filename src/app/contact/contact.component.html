@@ -1,0 +1,77 @@
+<section>
+  <div class="container">
+    <h1 class="text-uppercase mt-5 fw-bold text-center">contact section</h1>
+    <div class="mb-5 text-center headingLine position-relative mb-4">
+      <i class="fa-solid fa-star position-relative"></i>
+    </div>
+    <div class="mb-5">
+      <div class="mb-5 inputBox position-relative">
+        @if ( text ) {
+        <label
+          for="userName"
+          class="position-absolute bottom-100 text-primary mb-2"
+          >User Name :</label
+        >
+        }
+        <input
+          type="text"
+          class="form-control"
+          id="userName"
+          placeholder="userName"
+          [(ngModel)]="text"
+        />
+      </div>
+      <div class="mb-5 inputBox position-relative">
+        @if ( userNum ) {
+        <label
+          for="userAge"
+          class="position-absolute bottom-100 text-primary mb-2"
+          >User Age :</label
+        >
+        }
+        <input
+          type="number"
+          class="form-control"
+          id="userAge"
+          placeholder="userAge"
+          [(ngModel)]="userNum"
+        />
+      </div>
+      <div class="mb-5 inputBox position-relative">
+        @if ( userEmail ) {
+        <label
+          for="userEmail"
+          class="position-absolute bottom-100 text-primary mb-2"
+          >User Email :</label
+        >
+        }
+        <input
+          type="email"
+          class="form-control"
+          id="userEmail"
+          placeholder="userEmail"
+          [(ngModel)]="userEmail"
+        />
+      </div>
+      <div class="mb-5 inputBox position-relative">
+        @if ( userPass ) {
+        <label
+          for="userPassword"
+          class="position-absolute bottom-100 text-primary mb-2"
+          >User Password :</label
+        >
+        }
+        <input
+          type="password"
+          class="form-control"
+          id="userPassword"
+          placeholder="userPassword"
+          [(ngModel)]="userPass"
+        />
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</section>

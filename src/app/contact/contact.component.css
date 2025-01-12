@@ -1,0 +1,28 @@
+.headingLine {
+  width: fit-content;
+  margin: auto;
+}
+.headingLine::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  right: 220%;
+  background-color: black;
+}
+.headingLine::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 220%;
+  background-color: black;
+}
+.inputBox label {
+  position: absolute;
+}
+.inputBox:focus label {
+  bottom: 100%;
+}

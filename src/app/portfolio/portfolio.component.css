@@ -1,0 +1,38 @@
+.headingLine {
+  width: fit-content;
+  margin: auto;
+}
+.headingLine::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  right: 220%;
+  background-color: black;
+}
+.headingLine::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 220%;
+  background-color: black;
+}
+.inner {
+  overflow: hidden;
+}
+.layer {
+  background-color: teal;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.4s linear;
+}
+.inner:hover .layer {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+.mainInner .modal {
+  --bs-modal-width: 700px;
+}

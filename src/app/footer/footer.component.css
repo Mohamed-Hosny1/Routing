@@ -1,0 +1,7 @@
+.socialIcons i {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  margin-right: 10px;
+}
